@@ -234,7 +234,7 @@ Trader.prototype.addOrder = function(tradeType, amount, price, callback) {
   let reqData = {
     symbol: this.pair,
     side: tradeType.toUpperCase(),
-    type: 'LIMIT',
+    type: 'MARKET',
     timeInForce: 'GTC', // Good to cancel (I think, not really covered in docs, but is default)
     quantity: amount,
     price: price,
